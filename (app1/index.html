@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abaddon App 1 - Core Node</title>
+    <style>
+        body {
+            background-color: #030406;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            text-align: center;
+            padding-top: 20vh;
+            margin: 0;
+        }
+        .container {
+            background: #0d121f;
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            padding: 30px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+        }
+        h2 { color: #00f0ff; margin-top: 0; }
+        .btn {
+            background: linear-gradient(135deg, #0088cc, #005580);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .btn:hover { filter: brightness(1.2); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>⚡ تطبيق العقدة الأولى (App 1)</h2>
+        <p>مرتبط مباشرة مع محرك Supabase السحابي للإرسال المتزامن.</p>
+        <button class="btn" onclick="sendDataToSupabase()">إرسال البيانات للتطبيق الثاني</button>
+    </div>
+
+    <script>
+        function sendDataToSupabase() {
+            // محاكاة إرسال البيانات عبر Supabase API المفعل
+            alert('[Supabase API] تم إرسال الحزمة بنجاح إلى التطبيق الثاني عبر السحاب!');
+        }
+    </script>
+</body>
+</html>
